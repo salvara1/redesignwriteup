@@ -2,13 +2,143 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Redesign</title>
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
-
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <header>Redesign</header>
+    <!-- Introduction Section -->
+    <div class="section">
+      <h2 class="title">Overview</h2>
+      Through this project, I analyze and identify flaws in an existing inteface
+      and practice the redesign workflow by creating low and high fidelity
+      prototypes for various screen sizes and building a responsive website based
+      on those prototypes.
+    </div>
+    <!-- Interface Introduction -->
+    <div class="section">
+      <!-- the interface pictures -->
+      <h2 class="title">The Original Interface: Home Page</h2>
+      <p>The first step in the redesign process was to select an interface and analyze its flaws.
+         I selected the home page of a popular roller skating rink located in San Francisco.
+         Below you will find a preview of the interface.</p>
+      <div class="row_container">
+        <div class="col_text">
+          <h3>Immediate View</h3>
+          <img class="website" src="web.png" alt="home page with scattered images and videos">
+        </div>
+        <div class="col_text">
+          <h3>View After Scrolling</h3>
+          <img class="website" src="web2.png" alt="home page with scattered images and videos">
+        </div>
+      </div>
+      <p>View entire interface here: <a href="http://www.cora.org/"> http://www.cora.org</a></p>
+    </div>
+    <!-- Usability Issues Overview -->
+    <div class="section">
+      <h2 class="title"> Usability Evaluation</h2>
+      <p> The next step in the redesign process is to find potential flaws in the interface's usability.
+      Below you will find an evaluation of the interface's usability as defined by its learnability,
+      efficiency, and memorability.</p>
+      <!-- Learnability -->
+      <div class="bottom_margin">
+        <span class="bold_large">Learnability</span>
+        <ul>
+          <li>The navbar makes it easy for first-time users to navigate to different pages</li>
+          <li>The body of the site is scattered with unaligned images, videos, and floating links, that make it difficult to locate key information,
+          like address, hours of operation, and contact info</li>
+          <li>Both hyperlinked and standard underlined text are red at times, making it difficult to distinguish one from the other</li>
+          <li>The user must discover which flyers/images on the page are linked to other pages. Not all do!</li>
+        </ul>
+      </div>
+      <!-- Efficiency -->
+      <div class="bottom_margin">
+        <span class="bold_large">Efficiency</span>
+        <ul>
+          <li>Because this interface lacks any sort of hierarchy or categorization in the page's body,
+              even a user who is familiar with the interface would need to scroll and pick through
+              scattered media, making featured media perusing inefficient.
+          </li>
+          <li>Navigation bar usage would be efficient for experienced users.</li>
+        </ul>
+      </div>
+      <!-- Memorability -->
+      <div class="bottom_margin">
+        <span class="bold_large">Memorability</span>
+        <ul>
+          <li>The navbar is easily memorable and will allow returning users to regain proficiency easily</li>
+          <li> Because of the overwhelming amount of content in the body of the home page, users could have
+               a less than easy time relearning how to use the body portion of interface effectively.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Accessibility Evaluation -->
+    <div class="section">
+      <h2 class="title">Accessibility Evaluation</h2>
+      <p>
+        This interface had several accessibility concerns including a few major concerns.
+        The biggest concern being that the navigation bar was not at all identified by the
+        screenreader, meaning that these options would not be accessible for someone
+        relying on a screenreader. The WAVE report indicated that this interface had no
+        page or region structure. The interface used many tables with no data, included empty
+        links, and did not include any alt text.
+      </p>
+    </div>
+    <!-- lo-fi prototypes -->
+    <div class="section">
+      <h2 class="title">
+        Low-Fidelity Prototypes
+      </h2>
+      <p>
+        The next step in the process was to create high-level designs develop a
+        solution to the usability issues presented in the previous section. These are
+        called low-fidelity or lo-fi prototypes.
+        Below you will find a lo-fi prototype for the redesign interface on desktop,
+        mobile, and tablet, with annotations explaining what each change addresses.
+      </p>
+      <h3>Desktop Lo-fi Prototype</h3>
+      <div class="">
+        <img class="website"src="lofi_annotated_web.jpg" alt="annotated low-fidelity web page">
+      </div>
+      <h3>Tablet and Mobile Lo-fi Prototypes</h3>
+      <div class="">
+        <img class="website"src="lofi_annotated_mobiles.jpg" alt="annotated low-fidelity web page on tablet and mobile phone">
+      </div>
+    </div>
+    <!-- hi-fi prototypes -->
+    <div class="section">
+      <h2 class="title">High Fidelity Prototypes</h2>
+      <p>
+        The penultimate step is to create a high-fidelity or hi-fi prototype for the interface on
+        desktop, mobile, and tablet sizes. These prototypes include all design choices,
+        like color, font, layout, hiearchy, etc. Below you will find 3 high-fidelity Prototypes
+        annotated with notes to the developer about how the interface should respond
+        to each size.
+      </p>
+      <h3>Desktop and Tablet Hi-Fi Prototype</h3>
+      <div class="row_container" style="justify-content: flex-start;">
+        <img class="website"style="max-width: 50%;"src="web_hifi.jpg"alt="annotated high-fidelity web page">
+        <img class="website"style="max-width: 50%;"src="tablet_hifi.jpg" alt="annotated high-fidelity tablet page">
+
+
+      </div>
+      <h3>Mobile Hi-Fi Prototype</h3>
+      <div class="row_container" style="justify-content: flex-start;">
+        <img class="website"src="mobile_hifi.jpg" style="max-width: 70%;"alt="annotated high-fidelity mobile page">
+
+      </div>
+
+
+    </div>
+    <div class="section">
+      <h2 class="title">Final Responsive Redesign</h2>
+      You can view my final redesign here: <a href="https://redesigned-church.herokuapp.com/"> https://redesigned-church.herokuapp.com/</a>
+      <p>After running a screenreader and WAVE analysis on my final product, I managed to fixed some of
+      the major issues with the original interface using solely html tags to define hierarchy. I hope the
+    owners of the original interface will choose to implement these changes into their site so it can be more accessible
+      to their users. </p>
+    </div>
   </body>
 </html>
